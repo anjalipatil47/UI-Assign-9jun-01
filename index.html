@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["myForm"]["Email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+
+
+function validateForm() {
+  var x = document.forms["myForm"]["password"].value;
+  if (x == "") {
+    alert("password must be filled out");
+    return false;
+  }
+
+
+}
+</script>
+</head>
+<body>
+<pre>
+<form name="myForm" action="/action.html" onsubmit="return validateForm()" method="GET">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+
+  Email: <input type="text" name="email">
+  <input type="submit" value="Submit">
+
+  Password: <input type="text" name="password">
+  <input type="submit" value="Submit">
+</form>
+</pre>
+<script src="js/app.js"></script>
+</body>
+</html>
